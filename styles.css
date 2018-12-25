@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  .row {
+    display: flex;
+    align-content: stretch;
+    justify-content: space-between;
+    margin-bottom: 0.5%;
+    height: 18%;
+  }
+
+  .calculator {
+    width: 80%;
+    background-color: #4f4e54;
+    color: #46430c;
+    height: 75%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 5px #333;
+  }
+
+  .display {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px 5px;
+    background: #a09c1e;
+    width: 90%;
+    height: 18%; 
+    margin: 5% auto 3% auto;
+    border-radius: 5px;
+  }
+
+  #total {
+    font-size: 4em;
+    font-family: monospace;
+    margin-right: .125em;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    background-color: #f7ebd9;
+    color: #595854;
+    height: 75%;
+    width: 24.5%;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: .2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px #333;
+  }
+  
+  button:hover {
+    background-color: #f9f5ed;
+  }
+
+  button:active {
+    background-color: #928e8e;
+  }
+
+  #clear {
+    width: 49.7%;
+    background: #da7020;
+  }
+
+  #clear:hover {
+      background:#e27524;
+  }
+
+  #clear:active {
+    background:#e27524;
+}
+
+  #zero {
+    width: 74.7%;
+  }
+
+  button:last-child {
+    background-color: #359eb5;
+    color: #595854;
+  }
+
+  button:last-child:hover {
+    background-color: #2bb5bf;
+  }
+
+  button:last-child:active {
+    background-color: #2bb5bf;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
+  #input {
+      height: 80%;
+      width: 90%;
+      margin: auto;
+  }
+
+  #equal {
+    background-color: #f7ebd9;
+  }
+
+  #equal:hover {
+    background-color: #f9f5ed;
+  }
+
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .calculator {
+        width: 80%;
+        height: 60%;
+    }
+    
+    #total {
+        font-size: 5em;
+    }
+
+    button {
+      font-size: 1em;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .calculator {
+        width: 80%;
+        height: 75%;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .calculator {
+        width: 60%;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .calculator {
+        width: 50%;
+
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .calculator {
+        width: 50%;
+        height: 85%;
+    }
+}
+  
